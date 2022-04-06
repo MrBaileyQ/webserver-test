@@ -8,7 +8,7 @@ def view_2(request):
     context = {
         "name": "John",
         "age": "42",
-        "title": "Mr.",
+        "title": "Sir.",
         "married": "True",
         "child_count": "3",
         "children": [

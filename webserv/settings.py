@@ -1,1 +1,1 @@
-BASE_DIR = """D:/1 - Projects/6 - Python/1 - Web server example/src/webserv/"""
+BASE_DIR = """E"""
