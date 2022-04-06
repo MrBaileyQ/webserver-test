@@ -1,0 +1,25 @@
+import os
+import sys
+
+def execute_command(command, args):
+    if command=="runserver":
+        host = "0.0.0.0"
+        port = 8080
+        if len(args)>0:
+            host = args[0]
+        if len(args)>1:
+            port = int(args[1])
+
+        from server import StartServer
+        StartServer(host, port)
+
+
+for arg in sys.argv:
+    print(f"[{sys.argv.index(arg)}] Argument: {arg}")
+
+if len(sys.argv)>1:
+    cmd = sys.argv[1]
+    new_args = sys.argv[2:]
+    print(f"New arguments: {new_args}")
+    print(new_args)
+    execute_command(cmd, new_args)
